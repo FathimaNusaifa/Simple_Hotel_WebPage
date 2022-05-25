@@ -1,0 +1,162 @@
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family:'poppins', sans-serif;
+	
+}
+
+body{
+	background: url("../images/2.jpg");
+	background-size:cover;
+}
+
+.cont{
+	position: relative;
+	height: 100vh;
+	padding: 50px 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.cont .content{
+	max-width: 800px;
+	text-align: center;
+}
+.cont .content h2{
+	font-size: 45px;
+	font-weight: 500;
+	color: #000;
+	font-weight: bold;
+}
+
+.cont .content p{
+	font-weight: 300;
+	color: #000;
+	font-weight: bold;
+
+}
+.con{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+}
+.con .info
+{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+
+.con .info .box{
+	position: relative;
+	padding: 20px 0;
+	display: flex;
+}
+.con .info .box .icon{
+	min-width: 60px;
+	height: 60px;
+	background:#fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius:50%;
+	font-size: 22px;
+
+}
+
+.con .info .box .text{
+	display: flex;
+	margin-left: 20px;
+	font-size: 16px;
+	color: #000;
+	flex-direction: column;
+	font-weight: 300;
+	font-weight: bold;
+
+
+}
+
+.con.info .box .text h3{
+	font-weight: 500;
+	color: #ed5565;
+}
+.form{
+	width: 40%;
+	padding: 40px;
+	background: #fff;
+}
+.form h2{
+	font-size: 30px;
+	color: #333;
+	font-weight: 500;
+}
+
+.form .input{
+	position: relative;
+	width: 100%;
+	margin-top: 10px;
+}
+.form .input input,
+.form .input textarea
+{
+	width: 100%;
+	padding: 5px 0;
+	font-size: 16px;
+	margin: 10px 0;
+	border: none;
+	border-bottom: 2px solid #333;
+	outline:none;
+	resize: none;
+}
+.form .input span{
+	position: absolute;
+	left: 0;
+	padding: 5px 0;
+	font-size: 16px;
+	margin: 10px 0;
+	pointer-events: none;
+	transition: 0.5s;
+	color:#666;
+}
+.form .input input:focus ~span,
+.form .input input:valid ~span,
+.form .input textarea:focus ~span,
+.form .input textarea:valid ~span
+{
+	color: #ed5565;
+	font-size: 12px;
+	transform: translateY(-20px);
+}
+.form .input input[type="submit"]{
+	width: 100px;
+	background: #ed5565;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	padding: 10px;
+	font-size: 18px; 
+}
+@media (max-width: 991px)
+{
+	.cont
+	{
+		padding: 50px;
+	}
+	.con
+	{
+		flex-direction:column;
+	}
+	.con .info 
+	{
+		margin-bottom: 40px;
+	}
+	.con .info 
+	{
+		width: 100%;
+	}
+
+}
